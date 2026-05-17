@@ -27,6 +27,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Run the Maven verify phase
+      working-directory: App
       run: mvn --batch-mode --update-snapshots verify
 
       
